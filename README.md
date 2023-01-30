@@ -6,7 +6,7 @@ Week 7 challenge: Work Day Scheduler
 
 ## Resources:
 
-OpenAi, for specific questions on "how to use" and concise code:
+OpenAi, for specific questions on "how to use" and consolidate code:
 
 - https://chat.openai.com/
 
