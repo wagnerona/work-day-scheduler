@@ -41,7 +41,7 @@ The following animation demonstrates the application functionality:
 
 ## Mockup and usage:
 
-<img src = "./images/Sequence 01.gif>
+<img src = "./images/Sequence 01.gif">
 
  To use this app:
  
