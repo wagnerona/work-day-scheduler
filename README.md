@@ -27,9 +27,16 @@ Tag to input text:
 
 - https://api.jquery.com/parent/
 
-JS $(this) keyword:
+Jquery .each
+
+- https://api.jquery.com/each/
+
+
+JS this and $(this) keyword:
 
 - https://www.youtube.com/watch?v=gvicrj31JOM&ab_channel=ProgrammingwithMosh
+- https://www.geeksforgeeks.org/this-in-javascript/
+- https://www.geeksforgeeks.org/difference-between-this-and-this-in-jquery/
 
 
 
