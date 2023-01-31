@@ -29,12 +29,16 @@ $(document).ready(function () {
 //function to change blocks of color depending on time
 function checkTime() {
     let currentTime = parseInt(moment().format('H'));
+    //turns current time into an Integer for later use
+
     // let currentTime = parseInt(10);
     // console.log(currentTime);
     // Used for debugging and making sure timeboxes display properly
 
     $('.time-block').each(function () {
         let hourStamp = parseInt($(this).attr('id'));
+        //each methods targets the .time-block element, hourStamp converts the ID of the element into an integer. To  later compare with currentTime.
+
         if (hourStamp === currentTime) {
 
             $(this).addClass('present');
@@ -45,13 +49,31 @@ function checkTime() {
         } else if (hourStamp > currentTime) {
             $(this).addClass('future');
         }
-    }
-    )
+    });
+    // If statement adds a class to the time block $(this) element depending on wether its past, present or future in relation to current time. Each class has a different color block. 
+
 }
 checkTime();
 
 // Get previous item from local storage 
 $('.time-block').each(function () {
-    $(this.description).val(localStorage.getItem($(this.description))
-    )
+    // $(this.description).val(localStorage.getItem($(this.description))
+    // )
+    $(this).find('.description').val(localStorage.getItem($(this).attr('id')));
 });
+// Could have used getItem for each hour ID but decided to use .each method
+
+// .find() jquery method searches for an element with class .description within  $(this) element which is time-block
+
+// .val(localStorage.getItem($(this).attr('id'))) sets the value of .description element into the "value" (key,value) stored in local storage using getItem.
+
+// The "key" for the item is the ID of the current .time-block which is obtained by the $(this).attr(ID). 
+
+// The result of "localStorage.getItem($(this).attr('id'))" is the value (.description) stored in the local storage for the given key 
+
+
+//on click function to reset descriptions 
+$('.resetBtn').on('click', function () {
+    localStorage.clear();
+    location.reload();
+})
