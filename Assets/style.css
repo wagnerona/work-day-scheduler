@@ -4,6 +4,7 @@ body {
   font-family: 'Poppins';
   font-size: 16px;
   line-height: 1;
+  background-color: #353535;
 }
 
 textarea {
@@ -15,12 +16,18 @@ textarea {
   padding: 10px;
 }
 
+.container {
+  background-color: #1b1b1b;
+  border-radius: 30px;
+  padding: 50px;
+}
+
 .jumbotron {
   text-align: center;
-  background-color:rgb(129, 197, 252);
-  color: black;
+  background-color:#353535;
+  color: rgb(240, 240, 240);
   border-radius: 0;
-  border-bottom: 10px solid rgb(83, 83, 83);
+  /* border-bottom: 5px solid rgb(192, 192, 192); */
 }
 
 .description {
@@ -30,6 +37,7 @@ textarea {
 .time-block {
   text-align: center;
   border-radius: 15px;
+  margin: 15px 0px;
 }
 
 .row {
@@ -39,9 +47,12 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: #5C5C5C;
+  color: #ffffff;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+  /* border-top: 1px dashed #000000; */
 }
 
 .past {
@@ -50,21 +61,25 @@ textarea {
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #f8df98;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #a9eea9;
   color: white;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  /* border-left: 1px solid black; */
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #52b0c5;
   color: white;
+}
+
+.saveBtn:hover {
+  background-color: rgb(58, 126, 141)
 }
 
 .saveBtn i:hover {
